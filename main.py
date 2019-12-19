@@ -155,6 +155,7 @@ def convert_excel2csv(cfg):
                 continue
             impValues['группа'] = grp
             impValues['описание'] = impValues['описание'].encode('cp1251', errors='replace').decode('cp1251')
+            impValues['prodname'] = impValues['prodname'].encode('cp1251', errors='replace').decode('cp1251')
             impValues['код_'] = impValues['код_'].encode('cp1251', errors='replace').decode('cp1251')
 
             for outColName in out_template.keys():
